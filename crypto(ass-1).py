@@ -7,17 +7,12 @@ def caesar_encrypt(text, shift):
         else:
             result += char  
     return result
-
 def caesar_decrypt(text, shift):
     return caesar_encrypt(text, -shift)
-
-
 message = "hello"
 shift = 3
-
 encrypted = caesar_encrypt(message, shift)
 decrypted = caesar_decrypt(encrypted, shift)
-
 print("Org:", message)
 print("Enc:", encrypted)
 print("Dec:", decrypted)
